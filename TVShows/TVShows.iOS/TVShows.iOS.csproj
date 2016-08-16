@@ -173,51 +173,6 @@
     <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\article_image_0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\article_image_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\article_image_2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\article_image_3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\article_image_4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\article_image_5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dashboard_thumbnail_8.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\friend_thumbnail_27.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -227,55 +182,10 @@
     <BundleResource Include="Resources\friend_thumbnail_34.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_55.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_71.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_75.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_93.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\hamburguer_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\product_item_7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\profile_preview.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Resources.Drawable.Splash.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\signup_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\social_album_1.jpg" />
@@ -308,52 +218,43 @@
     <BundleResource Include="Resources\social_header_bg_0.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\social_header_bg_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tabs0_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\thumb_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\user_profile_0.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\user_profile_1.jpg" />
+    <BundleResource Include="Resources\article_image_0_ban.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\walkthrough_bg_0.png" />
+    <BundleResource Include="Resources\article_image_1_ban.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\walkthrough_bg_1.png" />
+    <BundleResource Include="Resources\article_image_2_ban.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\walkthrough_bg_2.png" />
+    <BundleResource Include="Resources\article_image_3_ban.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\walkthrough_generic_phone_bg.png" />
+    <BundleResource Include="Resources\article_image_4_ban.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\welcome_bg.jpg" />
+    <BundleResource Include="Resources\article_image_5_ban.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\alessandra.jpg" />
+    <BundleResource Include="Resources\favorite.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\cancer.jpg" />
+    <BundleResource Include="Resources\gallery.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\chamarMedico.jpg" />
+    <BundleResource Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\DezDicas.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\QuedaCabelo.jpg" />
+    <BundleResource Include="Resources\tv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
