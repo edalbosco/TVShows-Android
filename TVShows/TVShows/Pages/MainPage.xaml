@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	           xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	           xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
+             xmlns:templates="clr-namespace:TVShows.Templates"
+             x:Class="TVShows.Pages.MainPage"
+            Title="TV Show">
+
+  <TabbedPage.ToolbarItems>
+    <ToolbarItem Name="MoreShows" Command="{Binding MoreShowsCommand}" Text="More Shows" Order="Primary" />
+  </TabbedPage.ToolbarItems>
+  
+  <TabbedPage.Children>
+    <!--CachingStrategy="RecycleElement"-->
+
+    <ContentPage Title="TV Show" Icon="tv.png">
+      <ListView
+			x:Name="listViewMessages"
+			BackgroundColor="White"
+			RowHeight="100"
+			IsPullToRefreshEnabled ="true"
+			ItemTapped="OnItemTapped"
+			ItemsSource="{ Binding TVShows }"
+			>
+
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <templates:TVShowItemTemplate/>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ContentPage>
+
+    <ContentPage Title="Favorites" Icon="favorite.png">
+
+      <artina:GridOptionsView
+           Padding="10"
+           ColumnSpacing="10"
+           RowSpacing="10"
+           VerticalOptions="Fill"
+           HeightRequest="600"
+           ColumnCount="2"
+           RowCount="3"
+           ItemsSource="{Binding Favorites}">
+
+        <artina:GridOptionsView.ItemTemplate>
+          <DataTemplate>
+            <templates:SocialGalleryShow Show="{Binding .}" />
+          </DataTemplate>
+        </artina:GridOptionsView.ItemTemplate>
+      </artina:GridOptionsView>
+      
+    </ContentPage>
+
+    <ContentPage Title="Gallery" Icon="gallery.png">
+      <RelativeLayout>
+        <StackLayout Spacing="0" Padding="0"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+          <!--<StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource AccentColor}" >
+            <Label Text="+" TextColor="White" HorizontalOptions="End" Margin="5"/>
+          </StackLayout>-->
+
+
+          <Grid Padding="10">
+
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="Img0" Source="social_album_1.jpg" Grid.Row="0" Grid.Column="0"/>
+            <Image x:Name="Img1" Source="social_album_2.jpg" Grid.Row="0" Grid.Column="1"/>
+            <Image x:Name="Img2" Source="social_album_3.jpg" Grid.Row="0" Grid.Column="2"/>
+            <Image x:Name="Img3" Source="social_album_4.jpg" Grid.Row="1" Grid.Column="0" IsVisible="False"/>
+            <Image x:Name="Img4" Source="social_album_5.jpg" Grid.Row="1" Grid.Column="1" IsVisible="False"/>
+            <Image x:Name="Img5" Source="social_album_6.jpg" Grid.Row="1" Grid.Column="2" IsVisible="False"/>
+            <Image x:Name="Img6" Source="social_album_7.jpg" Grid.Row="2" Grid.Column="0" IsVisible="False"/>
+            <Image x:Name="Img7" Source="social_album_8.jpg" Grid.Row="2" Grid.Column="1" IsVisible="False"/>
+            <Image x:Name="Img8" Source="social_album_9.jpg" Grid.Row="2" Grid.Column="2" IsVisible="False"/>
+
+          </Grid>
+          
+          
+          
+          <!--<artina:GridOptionsView x:Name="Gallery"
+               Padding="10,0"
+               ColumnSpacing="10"
+               RowSpacing="10"
+               VerticalOptions="Fill"
+               ColumnCount="3"
+               RowCount="3"
+               ItemsSource="{Binding Images}">
+
+            <artina:GridOptionsView.ItemTemplate>
+              <DataTemplate>
+                <templates:SocialGalleryImage Image="{Binding .}"/>
+              </DataTemplate>
+            </artina:GridOptionsView.ItemTemplate>
+          </artina:GridOptionsView>-->
+        </StackLayout>
+
+        <fab:FloatingActionButton
+            x:Name="fabBtn"
+            Source="plus.png"
+            Size="Normal"
+            Clicked="Handle_FabClicked"
+            RippleColor="Gray"
+            NormalColor="{StaticResource AccentColor}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-80}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-80}" />
+      </RelativeLayout>
+    </ContentPage>
+
+  </TabbedPage.Children>
+
+</TabbedPage>
